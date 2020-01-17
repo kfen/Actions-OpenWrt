@@ -57,6 +57,11 @@ jobs:
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
+    
+    - name: themes主题进程
+      run: |
+       cd openwrt
+       git clone https://github.com/kfen/kfen-luci-theme-material.git
 
     - name: Load custom configuration
       env:
