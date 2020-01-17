@@ -147,7 +147,7 @@ CONFIG_PACKAGE_nlbwmon=y
 # CONFIG_PACKAGE_strongswan-mod-xcbc is not set
 # CONFIG_PACKAGE_tc is not set
 # CONFIG_PACKAGE_trojan is not set
-# CONFIG_PACKAGE_v2ray is not set
+CONFIG_PACKAGE_v2ray＝y
 # CONFIG_PACKAGE_vlmcsd is not set
 # CONFIG_PACKAGE_vsftpd-alt is not set
 # CONFIG_PACKAGE_zerotier is not set
