@@ -63,15 +63,9 @@ jobs:
        cd openwrt
        git clone https://github.com/kfen/kfen-luci-theme-material.git
        
-    - name: Download package
-      run: |
-        cd openwrt && make download -j8
-        find dl -size -1024c -exec ls -l {} \;
-        find dl -size -1024c -exec rm -f {} \;
-
     - name: Load custom configuration
       env:
-        CONFIG_FILE: '.config'
+        CONFIG_FILE: 'janver_x64.config'
         DIY_SH: 'diy.sh'
       run: |
         [ -e files ] && mv files openwrt/files
@@ -83,6 +77,12 @@ jobs:
 
 #    - name: SSH connection to Actions
 #      uses: P3TERX/debugger-action@master
+
+    - name: Download package
+      run: |
+        cd openwrt && make download -j8
+        find dl -size -1024c -exec ls -l {} \;
+        find dl -size -1024c -exec rm -f {} \;
     
     - name: Multi-thread compile
       run: |
