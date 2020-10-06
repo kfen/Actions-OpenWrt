@@ -28,7 +28,7 @@ on:
 
 env:
   REPO_URL: https://github.com/kfen/openwrt-Lean
-  REPO_BRANCH: openwrt-18.06
+  REPO_BRANCH: openwrt-19.07
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: janver_x64.config
   DIY_P1_SH: diy-part1.sh
