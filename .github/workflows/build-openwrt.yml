@@ -27,8 +27,8 @@ on:
 #    types: started
 
 env:
-  REPO_URL: https://github.com/kfen/openwrt-Lean
-  REPO_BRANCH: lede-17.01
+  REPO_URL: https://github.com/kfen/openwrt
+  REPO_BRANCH: openwrt-18.06
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: janver_x64.config
   DIY_P1_SH: diy-part1.sh
